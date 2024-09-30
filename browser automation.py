@@ -20,7 +20,7 @@ def run(playwright: Playwright) -> None:
     page.get_by_test_id("i0118").fill(bing_password)
     page.get_by_test_id("i0118").press("Enter")
     
-    #page.get_by_role("link", name="Sign in Default profile image").click()
+    page.get_by_role("link", name="Sign in Default profile image").click()
 
     page.goto("https://rewards.bing.com/redeem/")
     page.get_by_role("link", name="Points breakdown ").click()
